@@ -12,5 +12,5 @@ function res = simVirusSpreading(beta, verbose)
         plot(tSol, ySol);
         legend("Susceptible","Infected","Recovered","Dead");
     end
-    res = [tSol, ySol];
+    res = [tSol, ySol.T];
 end
